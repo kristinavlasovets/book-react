@@ -9,10 +9,10 @@ export const Home = () => {
         <Link className="textlink" to="/pageone">Lust</Link>
         <Link className="textlink" to="/pagetwo">Gluttony</Link>
         <Link className="textlink" to="/pagethree">Greed</Link>
-        <Link className="textlink" to="/pagefour">Page Four</Link>
-        <Link className="textlink" to="/pagefive">Page Five</Link>
-        <Link className="textlink" to="/pagesix">Page Six</Link>
-        <Link className="textlink" to="/pageseven">Page Seven</Link>
+        <Link className="textlink" to="/pagefour">Sloth</Link>
+        <Link className="textlink" to="/pagefive">Wrath</Link>
+        <Link className="textlink" to="/pagesix">Envy</Link>
+        <Link className="textlink" to="/pageseven">Pride</Link>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ body {
 .home {
     p {
         font-size: 48px;
-        line-height: 24px;
+        line-height: 12px;
     }
 }
 
@@ -55,5 +55,29 @@ body {
       color: #54542e;
       text-decoration: none;
     }
+  }
+}
+
+.guide__icons {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #b9b4ad;
+  border-radius: 10px;
+  // transform: translateY(20%);
+
+  svg {
+    transform: translateY(50%);
+  }
+}
+
+
+.page__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .maintext {
+    width: 70%;
   }
 }

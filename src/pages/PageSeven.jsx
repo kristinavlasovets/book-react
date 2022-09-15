@@ -20,7 +20,6 @@ export const PageSeven = () => {
         </Link>
 
         <p className="maintext">
-          {" "}
           Pride (superbia), also known as hubris (from Ancient Greek) or
           futility. It is considered the original and worst of the seven deadly
           sins on almost every list, the most demonic. It is also thought to be

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { Link } from "react-router-dom";
+import { PageBlock } from '../components/PageBlock';
 
 export const Home = () => {
 
@@ -15,15 +15,14 @@ export const Home = () => {
     getData('./db.json')
   }, []);
 
-  console.log(pages)
-
   return (
     <div className="home">
       <p>Content</p>
       <div className="content__list">
 
         {pages && pages.map((item) => (
-          <Link className="textlink" key={item.id} to={item.link}>{item.title}</Link>
+
+          <PageBlock key={item.id} id={item.id} title={item.title} link={item.link} text={item.text} backlink={item.backlink} forwardlink={item.forwardlink} />
         ))}
 
       </div>

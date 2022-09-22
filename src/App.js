@@ -2,16 +2,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Home } from "./pages/Home";
-import { PageOne } from "./pages/PageOne";
-import { PageTwo } from "./pages/PageTwo";
-import { PageThree } from "./pages/PageThree";
-import { PageFour } from "./pages/PageFour";
-import { PageFive } from "./pages/PageFive";
-import { PageSix } from "./pages/PageSix";
-import { PageSeven } from "./pages/PageSeven";
+import { Page } from "./pages/Page";
 
 import "./scss/app.scss";
-
 
 
 function App() {
@@ -22,13 +15,8 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/pageone" element={<PageOne />} />
-            <Route path="/pagetwo" element={<PageTwo/>} />
-            <Route path="/pagethree" element={<PageThree/>} />
-            <Route path="/pagefour" element={<PageFour/>} />
-            <Route path="/pagefive" element={<PageFive/>} />
-            <Route path="/pagesix" element={<PageSix/>} />
-            <Route path="/pageseven" element={<PageSeven/>} />
+            <Route path="/pages/:id" element={<Page />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </div>
       </div>
